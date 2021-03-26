@@ -139,8 +139,6 @@ while (mov.isOpened()):
                         points.append((i[0], i[1]))
                         if len(points) > 1:
                             for i in range(len(points)):
-                                print("qsdfsdfdddddd")
-                                print(i)
                                 if i+1 < len(points):
                                     cv.line(destFrame, points[i], points[i+1], (255,0,255), 2)
                     if inRange(x2, y2, x1, y1):
